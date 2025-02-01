@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleit.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+</style>
+
+<style >
+  .background-video {
+      top: 0;
+      left: 0;
+      position: fixed;
+      object-fit: cover;
+      width: 100%;
+      z-index: -1;
+      height: 100%;
+     }
+
+     .video-container {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(10px);
+            transform: scale(1.1); 
+        }
+
+        .overlay {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+             position: fixed;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+</style>
+
+</head>
+<body>
+  <header class="header">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About</a>
+      <a href="product.html">Product</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+  <div class="center-logo">
+  <a href="index.html">
+    <img src="purbanegara.gif" alt="Logo">
+  </a>
+  </div>
+  </header>
+
+ <div class="video-container">
+        <video autoplay loop muted>
+            <source src="v1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="overlay"></div>
+
+    
+
+
+
+<section>
+<div class="word">
+  <h1 class=" "> Welcome to Purba Negara</h1>
+  
+  <h3 style="font-size: 25px;">"Purba Negara: Ancient Vibes, Future Drip."</h3>
+  <div class="button">
+  
+        <a href="aboutus.html"><button>About us</button></a>
+        <a href="product.html"><button>Shop now</button></a>
+        
+      </div>
+</div>
+
+
+
+
+
+<div class="center">
+
+  <input type="radio" checked name="active" id="tab-1">
+  <input type="radio" name="active" id="tab-2">
+  <input type="radio" name="active" id="tab-3">
+  <input type="radio" name="active" id="tab-4">
+
+      <div class="sliders">
+      <label for="tab-1"><img src="kad1.jpeg"></label>
+      <label for="tab-2"><img src="kad2.jpeg"></label>
+      <label for="tab-3"><img src="kad3.jpeg"></label>
+      <label for="tab-4"><img src="kad4.jpeg"></label>
+        
+      </div>
+
+      <div class="kad-img">
+        <img src="kad1.jpeg">
+        <img src="kad2.jpeg">
+        <img src="kad3.jpeg">
+        <img src="kad4.jpeg">
+      </div>
+     </div> 
+
+
+
+</section>
+
+
+
+
+
+
+  <div class="footer">
+    <p style="font-family:times new roman; ">Copyright 2025 &copy; Purba Negara</p>
+  </div>
+  
+</body>
+</html>

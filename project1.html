@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link id='favicon' rel="shortcut icon" href="image/logobg.png" type="image/x-png">
+	<link rel="stylesheet" href="project1.css">
+	<title>The End 6 Panel Cap</title>
+</head>
+<body>
+	<header class="header">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About</a>
+      <a href="product.html">Product</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+  <div class="center-logo">
+  <a href="index.html">
+    <img src="image/purbanegara.gif" alt="Logo">
+  </a>
+  </div>
+  </header>
+  <section>
+		<div  class="container flex">
+		<div class="left">
+		<div class="main_image">
+			<img src="image/pbcap1bg.png" class="slide">
+		</div>
+		<div class="option flex">
+			<img src="image/pbcap1bg.png" onclick="pbcap1bg.png">
+			<img src="image/pbcap2.jpg" onclick="pbcap2.jpg">
+			<img src="image/pbcap3.jpg" onclick="pbcap3.jpg">
+		</div>
+		</div>
+
+		<div class="right">
+			<h1>The End 6 Panel Cap</h1>
+			<h2>80.00<small>MYR</small></h2>
+			<h5>Description items:</h5>
+			<ul style="list-style-type: '\1F537';">
+				<li>Material Type :Corduroy</li>
+				<li>Logo : Embroidery Logo</li>
+				<li>Cap Design: 6 Panel</li>
+				<li>Production: Limited</li>
+			</ul>
+			<h3>Color Available:</h3>
+			<div class="color flex">
+				<span></span>
+			</div>
+			<h4>Quantity</h4>
+			<div class="qty-container">
+				<button type="button" class="qty-count-minus">-</button>
+				<input type="number" class="qty-count" min="0" max="10" value="1">
+				<button type="button" class="qty-count-plus">+</button>
+			</div>
+			<script>
+			document.querySelectorAll('.qty-container button').forEach(button => {
+			    button.addEventListener('click', () => {
+			    const input = document.querySelector('.qty-count');
+			    const min = +input.min || 0;
+			    const max = +input.max || 10;
+			    const currentValue = +input.value || min;
+
+			    if (button.classList.contains('qty-count-minus')) {
+			      input.value = Math.max(currentValue - 1, min);
+			    } 
+			    else if (button.classList.contains('qty-count-plus')) {
+			      input.value = Math.min(currentValue + 1, max);
+			    }
+			});
+			});
+			</script>
+		</div>
+		</div>
+	</section>
+	<div class="buy">
+  	<a href="https://www.instagram.com/purbanegara.my?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D%7Bpurbanegara.my%7D">
+    <img src="image/bb.png" alt="buy now">
+  	</a>
+  </div>
+	
+  <footer>Copyright 2025 &copy; Purba Negara</footer>
+    
+
+</body>
+</html>

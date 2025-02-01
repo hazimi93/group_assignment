@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PurbaNegara</title>
+	<style>
+		.background-video {
+      top: 0;
+      left: 0;
+      position: fixed;
+      object-fit: cover;
+      width: 100%;
+      z-index: -2;
+      height: 100%;
+     }
+
+     .video-container {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      overflow: hidden;
+      z-index: -1;
+      }
+
+      .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(10px);
+      transform: scale(1.1); 
+        }
+        
+	</style>
+	<link rel="stylesheet" type="text/css" href="stylebad.css">
+
+</head>
+<body>
+	  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About</a>
+      <a href="product.html">Product</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+  <div class="center-logo">
+  <a href="index.html">
+    <img src="purbanegara.gif" alt="Logo">
+  </a>
+  </div>
+  </header>
+
+  <div class="footer">
+    <p>Copyright 2025 &copy; Purba Negara</p>
+  </div>
+
+        </div>
+    </section>
+    <div class="container">
+        <h1>About Us</h1>
+        <p>An authentic brand brought to you by indie rock star Iqbal M. who brings special elements to each of his latest collections along with the "Purba Negara" principle in each collection design.</p>
+
+        <h2>PurbaNegara Sypnopsis</h2>
+        <ul class="services">
+            <li><strong>Establishment:</strong>established in March 2020.</li>
+            <li><strong>Why PurbaNegara?</strong> In 2020, Malaysia was hit by the Covid-19 pandemic which had a huge impact on Malaysians, including indie rock star Iqbal M. At that time, Iqbal M had the idea of ​​doing something since his income was affected because he could not perform on stage and he remembered the atmosphere in Malaysia before the arrival of Covid-19 which was very cheerful and prosperous. He thought that something that had passed could not be brought back and the brand "PurbaNegara" was born, which means a national legacy that could not be brought back..</li>
+
+        </ul>
+
+        <H2><strong>Why Choose Us?</strong></H2>
+        <ul class="services">
+            <li>Unique Design</li>
+            <li>Affordable Price</li>
+            <li>Variety of Choices</li>
+            <li>Originaly Made In Malaysia</li>
+        </ul>
+
+    </div>
+
+    <div class="video-container">
+        <video autoplay loop muted >
+            <source src="video/videobaju.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="overlay"></div>
+
+
+</body>
+</html>
